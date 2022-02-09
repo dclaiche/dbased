@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Player Has Games</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="players.html">Players</a></li>
+            <li><a href="player_has_games.html">Player Has Games</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="messages.html">Messages</a></li>
+            <li><a href="premium_membership.html">Premium Membership</a></li>
+        </ul>
+    </nav>
+
+    <!-- Table Below This -->
+    <h1>Player Has Games Table</h1>
+    <table>
+        <caption>Player Has Games</caption>
+        <thead>
+            <tr>
+                <th>players_player_id</th>
+                <th>games_game_id</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>27</td>
+                <td><button>Edit</button></td>
+                <td><button>Delete</button></td>
+            </tr>
+        </tbody>
+
+    </table>
+    <h2>Add Player Game Relationship </h2>
+    <form>
+        <div><input placeholder='players_player_id'></input></div>
+        <div><input placeholder='games_game_id'></input></div>
+        <button type="submit">Add</button>
+    </form>
+
+</body>
+</html>

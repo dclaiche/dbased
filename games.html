@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Games</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="players.html">Players</a></li>
+            <li><a href="player_has_games.html">Player Has Games</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="messages.html">Messages</a></li>
+            <li><a href="premium_membership.html">Premium Membership</a></li>
+        </ul>
+    </nav>
+
+    <!-- Table Below This -->
+    <h1>Games Table</h1>
+    <table>
+        <caption>Games</caption>
+        <thead>
+            <tr>
+                <th>game_id</th>
+                <th>time_played</th>
+                <th>duration</th>
+                <th>player_1</th>
+                <th>player_2</th>
+                <th>winner</th>
+                <th>socket_id</th>
+                <th>active_game</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>2022/03/26 15:55:04</td>
+                <td>3600</td>
+                <td>1</td>
+                <td>2</td>
+                <td>1</td>
+                <td>3425</td>
+                <td>0</td>
+                <td><button>Edit</button></td>
+                <td><button>Delete</button></td>
+            </tr>
+        </tbody>
+
+    </table>
+    <h2>Add Player Game Relationship </h2>
+    <form>
+        <div><input placeholder='game_id'></input></div>
+        <div><input placeholder='time_played'></input></div>
+        <div><input placeholder='duration'></input></div>
+        <div><input placeholder='player_1'></input></div>
+        <div><input placeholder='player_2'></input></div>
+        <div><input placeholder='winner'></input></div>
+        <div><input placeholder='socket_id'></input></div>
+        <div><input placeholder='active_game'></input></div>
+        <div><button type="submit">Add</button></div>
+    </form>
+
+</body>
+</html>
