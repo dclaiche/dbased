@@ -6,9 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
         <title>messages</title>
-    <script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
-
-    <script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
+        <script>
+            const deleteRow = (row) => {
+                document.getElementById(row).remove()
+            }
+        </script>
 <body>
     <nav>
         <ul>
@@ -32,7 +34,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
+            <tr id="row0">
                 <td>500</td>
                 <td>"Hello my name is bob"</td>
                 <td>00:10:52</td>
@@ -42,9 +44,9 @@
 
                     <button>edit</button></td>
                 </a>
-                <td><button>delete</button></td>
+                <td><button onclick="deleteRow('row0')">delete</button></td>
             </tr>
-            <tr>
+            <tr id="row1">
                 <td>1000</td>
                 <td>"GG!"</td>
                 <td>00:01:52</td>
@@ -54,9 +56,9 @@
 
                     <button>edit</button></td>
                 </a>
-                <td><button>delete</button></td>
+                <td><button onclick="deleteRow('row1')">delete</button></td>
             </tr>
-            <tr>
+            <tr id="row2">
                 <td>1500</td>
                 <td>"Let's have fun!"</td>
                 <td>00:02:33</td>
@@ -66,7 +68,7 @@
 
                     <button>edit</button></td>
                 </a>
-                <td><button>delete</button></td>
+                <td><button onclick="deleteRow('row2')">delete</button></td>
             </tr>
         </tbody>
     </table>

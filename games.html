@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Games</title>
+    <script>
+        const deleteRow = (row) => {
+            document.getElementById(row).remove()
+        }
+    </script>
 </head>
 <body>
     <nav>
@@ -35,7 +40,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
+            <tr id="row0">
                 <td>1</td>
                 <td>2022/03/26 15:55:04</td>
                 <td>3600</td>
@@ -48,9 +53,9 @@
 
                     <button>Edit</button></td>
                 </a>
-                <td><button>Delete</button></td>
+                <td><button onclick= "deleteRow('row0')">Delete</button></td>
             </tr>
-            <tr>
+            <tr id="row1">
                 <td>2</td>
                 <td>2022/04/20 16:20:69</td>
                 <td>2400</td>
@@ -63,9 +68,9 @@
 
                     <button>Edit</button></td>
                 </a>
-                <td><button>Delete</button></td>
+                <td><button onclick= "deleteRow('row1')">Delete</button></td>
             </tr>
-            <tr>
+            <tr id="row2">
                 <td>3</td>
                 <td>2022/05/15 12:22:15</td>
                 <td>5000</td>
@@ -78,7 +83,7 @@
 
                     <button>Edit</button></td>
                 </a>
-                <td><button>Delete</button></td>
+                <td><button onclick= "deleteRow('row2')">Delete</button></td>
             </tr>
         </tbody>
 
